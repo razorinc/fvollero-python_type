@@ -13,6 +13,10 @@ describe "the to_python_type function" do
     lambda { scope.function_to_python_type([]) }.should( raise_error(Puppet::ParseError))
   end
 
+  it "should raise a ParseError if there are more than 1 arguments" do
+    lambda { scope.function_to_python_type([nil,nil]) }.should ( raise_error(Puppet::ParseError))
+  end
+
   it "should convert a ruby bool into a string to a python bool" do
     result = scope.function_to_python_type([true])
     result.should(eq("True"))
