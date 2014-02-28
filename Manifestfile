@@ -1,0 +1,11 @@
+name 'fvollero-python_type'
+version '0.0.1'
+source 'git://github.com/razorinc/fvollero-python_type.git'
+author 'Francesco Vollero'
+license 'Apache 2.0'
+summary 'Puppet module to convert ruby types to python types'
+description 'Module to convert ruby standard types to python types'
+project_page 'https://github.com/razorinc/fvollero-python_type'
+
+## Add dependencies, if any:
+# dependency 'username/name', '>= 1.2.0'
