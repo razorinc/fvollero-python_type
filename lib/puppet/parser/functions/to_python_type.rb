@@ -10,7 +10,7 @@ EOS
   ) do |arguments|
 
     raise(Puppet::ParseError, "to_python_type(): Wrong number of arguments " +
-      "given (#{arguments.size} for 1)") if arguments.size < 1 || arguments.size>1
+      "given (#{arguments.size} for 1)") if arguments.size != 1
 
     value = arguments[0]
 
